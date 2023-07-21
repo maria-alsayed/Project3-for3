@@ -1,6 +1,6 @@
 # Project3-for3
 
-Requirments
+Requirements
 
 For Project 3, you will work with your group to tell a story using data visualizations. Here are the specific requirements:
 
