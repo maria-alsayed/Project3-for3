@@ -59,7 +59,7 @@ The proposal is essentially a brief summary of your interests and intent. Be sur
 
 Use the following example for guidance:
 
-> The aim of our project is to uncover patterns in credit card fraud. We’ll examine relationships >between transaction types and location, purchase prices and times of day, purchase trends over >the course of a year, and other related relationships derived from the data.
+> The aim of our project is to uncover patterns in credit card fraud. We’ll examine relationships between transaction types and location, purchase prices and times of day, purchase trends over >the course of a year, and other related relationships derived from the data.
 
 
 ## Data Cleanup and Analysis
