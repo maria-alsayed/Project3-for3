@@ -58,8 +58,9 @@ The proposal is essentially a brief summary of your interests and intent. Be sur
 - Possible source for the data
 
 Use the following example for guidance:
-
+```
 The aim of our project is to uncover patterns in credit card fraud. We’ll examine relationships >between transaction types and location, purchase prices and times of day, purchase trends over >the course of a year, and other related relationships derived from the data.
+```
 
 ## Data Cleanup and Analysis
 Now that you’ve picked your data, it’s time to tackle development and analysis. This is where the fun starts!
