@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+nav {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    background: linear-gradient(35deg, teal 50%, black 90%);
+}
