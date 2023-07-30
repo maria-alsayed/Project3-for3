@@ -1,6 +1,6 @@
 // Function to fetch data from the Flask backend
 async function fetchData() {
-    const response = await fetch('/static/data.json')
+    const response = await fetch('/static/data.json');
     const data = await response.json();
     console.log('Data:', data);
 
@@ -18,15 +18,21 @@ async function fetchData() {
         }
     }
 
-    return data;
+    const teamNames = data.reduce((names, team) => {
+        names[team.team_id] = team.team_name;
+        return names;
+    }, {});
+
+    console.log(teamNames)
+    return { data, teamNames };
 }
 
 // Function to render the bar chart
 async function renderChart() {
-    const data = await fetchData();
+    const { data, teamNames } = await fetchData();
 
     // Check if data is available
-    if (!data) {
+    if (!data || !teamNames) {
         return;
     }
 
@@ -35,7 +41,7 @@ async function renderChart() {
             type: 'bar',
         },
         series: data.map(team => ({
-            name: `Team ID: ${team.team_id}`,
+            name: teamNames[team.team_id],
             data: team.team_data.map(row => row.three_point_percentage),
         })),
         xaxis: {
@@ -48,3 +54,5 @@ async function renderChart() {
 }
 
 renderChart();
+
+
